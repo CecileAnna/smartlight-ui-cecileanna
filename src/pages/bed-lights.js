@@ -4,9 +4,9 @@ const BedLights = () => {
     
     return ( 
 
-        <div className="Bed-light">
+        <div className="bed-lights">
 
-            <HeadingOne text="Bed Room"/>
+            <HeadingOne text="Bedroom"/>
 
         </div>
 

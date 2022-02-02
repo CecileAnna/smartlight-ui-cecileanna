@@ -6,7 +6,7 @@ const DeskLights = () => {
 
         <div className="desk-light">
 
-            <HeadingOne text="Desk Lights"/>
+            <HeadingOne text="Desk lights"/>
 
         </div>
 
