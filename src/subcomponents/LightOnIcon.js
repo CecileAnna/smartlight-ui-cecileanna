@@ -1,6 +1,6 @@
 import { HiOutlineLightBulb } from "react-icons/hi";
 
-const LightIcon = () => {
+const LightOnIcon = () => {
     return ( 
 
         <HiOutlineLightBulb/>
@@ -8,4 +8,4 @@ const LightIcon = () => {
      );
 }
  
-export default LightIcon;
+export default LightOnIcon;
