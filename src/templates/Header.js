@@ -1,5 +1,5 @@
 import ArrowLeftIcon from '../subcomponents/ArrowLeftIcon';
-import Lamp from '../media/light-bulb.png';
+import Lamp from '../media/lamp.png';
 import ColorCircle from '../subcomponents/ColorCircle';
 import HeadingOne from "../templates/Header";
 

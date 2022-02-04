@@ -1,6 +1,6 @@
 import HeadingThree from "../subcomponents/HeadingThree";
 
-const NavSliderCards = () => {
+const NavSliderCard = () => {
 
     return ( 
 
@@ -15,4 +15,4 @@ const NavSliderCards = () => {
      );
 }
  
-export default NavSliderCards;
+export default NavSliderCard;
