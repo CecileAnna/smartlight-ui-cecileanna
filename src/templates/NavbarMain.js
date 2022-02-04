@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import LightZonesCards from "./LightZonesCards";
-import BedroomImg from "../../media/light-zones_icons/bed";
-import LivingroomImg from "../../media/light-zones_icons/room";
-import KitchenImg from "../../media/light-zones_icons/kitchen";
-import BathroomImg from "../../media/light-zones_icons/bathtub";
-import OutdoorsImg from "../../media/light-zones_icons/house";
-import BalconyImg from "../../media/light-zones_icons/balcony";
+import LightZonesCards from "../components/LightZonesCards";
+import BedroomImg from "../media/light-zones_icons/bed.png";
+import LivingroomImg from "../media/light-zones_icons/room.png";
+import KitchenImg from "../media/light-zones_icons/kitchen.png";
+import BathroomImg from "../media/light-zones_icons/bathtub.png";
+import OutdoorsImg from "../media/light-zones_icons/house.png";
+import BalconyImg from "../media/light-zones_icons/balcony.png";
 
-const Navbar = (props) => {
+const NavbarMain = (props) => {
     return (
         
            <nav className="Navbar flex p-4 content-center justify-center gap-4">
@@ -52,4 +52,4 @@ const Navbar = (props) => {
 
     );
 };
-export default Navbar;
+export default NavbarMain;

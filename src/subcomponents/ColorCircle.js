@@ -1,4 +1,4 @@
-import PlusIcon from "./plusIcon";
+import PlusIcon from "./PlusIcon";
 
 const ColorCircle = (props) => {
 

@@ -1,6 +1,7 @@
 import ArrowLeftIcon from '../subcomponents/ArrowLeftIcon';
-import Lamp from '../../media/light-bulb';
-import ColorCircle from '../subcomponents/ColorCircle'
+import Lamp from '../media/light-bulb.png';
+import ColorCircle from '../subcomponents/ColorCircle';
+import HeadingOne from "../templates/Header";
 
 const Header = (props) => {
 
