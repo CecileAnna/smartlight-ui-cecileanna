@@ -6,7 +6,7 @@ import HouseIcon from "../subcomponents/HouseIcon";
 const Navbar = () => {
     return (
         
-           <nav className="Navbar flex p-4 content-center justify-center gap-4">
+           <nav className="Navbar flex p-4 content-center justify-center gap-4 w-full sticky bottom-0 bg-white text-main-blue">
 
                <BsLightbulbOff className="text-xl"/>
 

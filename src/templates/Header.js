@@ -8,7 +8,8 @@ const Header = (props) => {
 
         <div className="flex justify-between content-center bg-main-blue">
 
-            <div className="flex gap-2">
+            
+            <div className="flex flex-wrap gap-2 w-4">
 
                 {props.arrowIcon && <ArrowLeftIcon/> }
 
@@ -16,13 +17,17 @@ const Header = (props) => {
 
             </div>
 
-            <div className="flex-col relative">
+            {props.onZonePage && 
 
-                <Lamp className="z-10"/>
+                <div className="flex-col relative">
 
-                <ColorCircle className="z-0 absolute -inset-2" color={props.lampBulbColor}/>
+                    <Lamp className="z-10"/>
 
-            </div>
+                    <ColorCircle className="z-0 absolute -inset-2" color={props.lampBulbColor}/>
+
+                </div>
+
+            }
 
         </div>
 

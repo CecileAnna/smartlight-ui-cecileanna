@@ -7,13 +7,13 @@ const LightZonesCards = (props) => {
 
         <div className="rounded flex-col justify-start content-between p-2">
 
-            <img src={props.iconUrl} alt="Light Zones Icons" />
+            {props.iconImg && <div>{props.iconImg}</div>}
 
             <div className="flex-col content-between justify-start">
 
-                <HeadingTwo text={props.headingOneText}/>
+                <HeadingTwo text={props.headingTwoText}/>
 
-                <HeadingThree text={props.headingTwoText} fontColor={props.headingThreeColor}/>
+                <HeadingThree text={props.headingThreeText} fontColor={props.headingThreeColor}/>
 
             </div>
 

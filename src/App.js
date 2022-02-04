@@ -5,7 +5,9 @@ import DeskLights from "./pages/desk-lights";
 import MainLight from "./pages/main-light";
 import Header from "./templates/Header";
 import Navbar from "./components/Navbar";
+import NavbarBottom from "./components/NavbarBottom";
 import Home from "./pages/home";
+import MainContentWrapper from "./subcomponents/MainContentWrapper";
 
 
 function App() {
@@ -15,18 +17,16 @@ function App() {
 
       <div className="App">
 
-      <Header>
+      <Header titleText="Control Panel">
 
       </Header>
 
 
-      <motion.div animate={{ x: 100 }}>
-        
-          <h1>Animation test</h1>
-        
-      </motion.div>
+      <MainContentWrapper>
 
-      <Navbar/>
+        <Navbar/>
+
+      </MainContentWrapper>
 
       <Routes>
 
@@ -36,6 +36,8 @@ function App() {
         <Route path="/bed-lights" element={<BedLights/>}/>
 
       </Routes>
+
+      <NavbarBottom/>
 
 
       </div>
