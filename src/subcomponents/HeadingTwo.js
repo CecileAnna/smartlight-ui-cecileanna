@@ -2,7 +2,7 @@ const HeadingTwo = (props) => {
 
     return ( 
 
-        <h1>{props.text}</h1>
+        <h2 class="text-xl font-bold">{props.text}</h2>
 
      );
      
