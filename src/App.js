@@ -11,15 +11,15 @@ import MainContentWrapper from "./subcomponents/MainContentWrapper";
 
 
 function App() {
+
   return (
 
     <BrowserRouter>
 
       <div className="App">
 
-        <Header titleText="Control Panel">
+         <Header titleText="Control Panel"/>
 
-        </Header>
 
 
         <MainContentWrapper>
@@ -40,8 +40,9 @@ function App() {
         <NavbarBottom/>
 
       </div>
-
+    
     </BrowserRouter>
+
   );
 }
 

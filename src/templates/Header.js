@@ -1,13 +1,13 @@
 import ArrowLeftIcon from '../subcomponents/ArrowLeftIcon';
 import Lamp from '../media/lamp.png';
 import ColorCircle from '../subcomponents/ColorCircle';
-import HeadingOne from "../templates/Header";
+import HeadingOne from "../subcomponents/HeadingOne";
 
 const Header = (props) => {
 
     return ( 
 
-        <div className="flex justify-between content-center bg-main-blue">
+        <div className="flex justify-between content-center bg-main-blue w-full h-full">
 
             
             <div className="flex flex-wrap gap-2 w-4">
