@@ -6,11 +6,20 @@ import KitchenImg from "../media/light-zones_icons/kitchen.png";
 import BathroomImg from "../media/light-zones_icons/bathtub.png";
 import OutdoorsImg from "../media/light-zones_icons/house.png";
 import BalconyImg from "../media/light-zones_icons/balcony.png";
-import MainContentWrapper from "./MainContentWrapper";
+// import MainContentWrapper from "./MainContentWrapper";
+
+import Header from "../templates/Header";
 
 
 
 const MainContent = () => {
+
+    // if( id=1 ){
+    //     throw new Error('Ups, something went wrong...')
+    // }
+
+    // throw new Error('Ups, something went wrong...')
+
     const rooms = [
         {
             id:1,
@@ -32,7 +41,7 @@ const MainContent = () => {
             img: KitchenImg,
             title: 'Kitchen',
             lights: '5',
-            link: 'Kitchen' 
+            link: 'kitchen' 
         },
         {
             id:4,
@@ -57,22 +66,26 @@ const MainContent = () => {
         },
     ]
 
+
+
     return (
+        
         <>
+
+            <Header titleText="Control Panel"/>
         
             <div className="bg-main-grey rounded-t-xl w-full h-full">
                 
-                <h1 class=" py-4 text text-main-blue regal-y font-bold text-main pl-4 mt-4 ">All rooms </h1>
+                <h1 className=" py-4 text text-main-blue regal-y font-bold text-main pl-4 mt-4 ">All rooms </h1>
 
                 <div className="grid grid-cols-2 w-full h-full justify-center content-center">
 
                 {rooms.map((room) => (
 
-                    <Link to={'room/' + room.link}>
+                    <Link key={room.id} to={'room/' + room.link}>
 
                         <div
-                        key={room.id}
-
+                        
                         style={{
         
                         width: '150px',
@@ -85,13 +98,12 @@ const MainContent = () => {
                         cursor: 'pointer',
         
                         }}
-        
                         >
-                            <div class="pl-4 mt-4"><img src={room.img} width="51px" height="42px"></img></div>
+                            <div className="pl-4 mt-4"><img src={room.img} width="51px" height="42px"></img></div>
 
-                            <div class="text regal-blacktext font-bold text-main pl-4 mt-4">{room.title} </div>
+                            <div className="text regal-blacktext font-bold text-main pl-4 mt-4">{room.title} </div>
 
-                            <div class="text text-regal-yellowtext font-bold text-small pl-4 ">{room.lights} lights</div>
+                            <div className="text text-regal-yellowtext font-bold text-small pl-4 ">{room.lights} lights</div>
 
                         
                         </div>

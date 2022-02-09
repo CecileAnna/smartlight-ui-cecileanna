@@ -1,4 +1,4 @@
-import HeadingOne from "../subcomponents/HeadingOne";
+// import HeadingOne from "../subcomponents/HeadingOne";
 import HeadingTwo from "../subcomponents/HeadingTwo";
 import MainContentWrapper from "../subcomponents/MainContentWrapper";
 import Header from "../templates/Header";
