@@ -14,10 +14,16 @@ import NavbarBottom from "./components/NavbarBottom";
 // import Home from "./pages/home";
 // import MainContentWrapper from "./subcomponents/MainContentWrapper";
 import MainContent from "./subcomponents/MainContent";
-import ErrorBoundary from "./ErrorBoundary";
+// import ErrorBoundary from "./ErrorBoundary";
+import * as Sentry from "@sentry/react";
+import HeadingOne from "./subcomponents/HeadingOne";
 
 
 function App() {
+
+// if(true) {
+//   throw new Error('Oh damn!');
+// }
 
   return (
 
@@ -29,11 +35,11 @@ function App() {
 
               <Route path="/" element={
                 
-                <ErrorBoundary>
+                <Sentry.ErrorBoundary fallback={<HeadingOne text="Oh oh, nonono - NO!"/>}>
 
                   <MainContent/>
                   
-                </ErrorBoundary>
+                </Sentry.ErrorBoundary>
               
               }/>
 
