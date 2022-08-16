@@ -1,14 +1,7 @@
 import { FiArrowLeft } from "react-icons/fi";
 
-
 const ArrowLeftIcon = () => {
+  return <FiArrowLeft className="text-3xl font-bold" />;
+};
 
-    return ( 
-
-        <FiArrowLeft/>
-
-     );
-     
-}
- 
 export default ArrowLeftIcon;

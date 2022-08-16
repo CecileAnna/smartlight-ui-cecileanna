@@ -4,22 +4,16 @@ import GearIcon from "../subcomponents/GearIcon";
 import HouseIcon from "../subcomponents/HouseIcon";
 
 const Navbar = () => {
-    return (
-        
-           <nav className="Navbar flex p-4 content-center justify-center gap-4 w-full sticky bottom-0 bg-white text-main-blue">
+  return (
+    <nav className="Navbar flex p-4 content-center justify-around gap-4 w-full sticky bg-white text-main-blue">
+      <BsLightbulbOff className="text-xl" />
 
-               <BsLightbulbOff className="text-xl"/>
+      <Link to="/">
+        <HouseIcon className="text-xl" />
+      </Link>
 
-                <Link to="/">
-
-                    <HouseIcon className="text-xl"/>
-
-                </Link> 
-
-                <GearIcon className="text-xl"/>  
-        
-           </nav> 
-
-    );
+      <GearIcon className="text-xl" />
+    </nav>
+  );
 };
 export default Navbar;

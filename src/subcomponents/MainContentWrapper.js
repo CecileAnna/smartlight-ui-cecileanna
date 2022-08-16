@@ -1,13 +1,9 @@
 const MainContentWrapper = (props) => {
-    return ( 
+  return (
+    <div className="flex-col rounded-t-3xl bg-main-grey w-full h-full p-10">
+      {props.children}
+    </div>
+  );
+};
 
-        <div className="flex-col rounded-t-full bg-main-grey w-full h-full">
-
-            {props.children}
-                
-        </div>
-
-     );
-}
- 
 export default MainContentWrapper;
