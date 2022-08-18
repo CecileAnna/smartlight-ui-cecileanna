@@ -5,7 +5,7 @@ const OnOff = () => {
 
   useEffect(() => {
     fetch(
-      "https://192.168.8.100/api/Yz2vBQatFKW7rIu7wA30jUFIXlgTef0fVIi3fwD7/lights/50/state",
+      "https://192.168.8.100/api/Yz2vBQatFKW7rIu7wA30jUFIXlgTef0fVIi3fwD7/groups/21/action",
       {
         method: "PUT",
         body: JSON.stringify({
