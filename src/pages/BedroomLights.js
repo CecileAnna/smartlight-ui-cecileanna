@@ -4,7 +4,6 @@ import Color from "../components/Color";
 import OnOff from "../components/OnOff";
 import HeadingTwo from "../subcomponents/HeadingTwo";
 import MainContentWrapper from "../subcomponents/MainContentWrapper";
-import PowerOff from "../subcomponents/PowerOff";
 import HeaderSettings from "../templates/HeaderSettings";
 
 const BedroomLights = () => {
@@ -12,10 +11,8 @@ const BedroomLights = () => {
     <>
       <HeaderSettings arrowIcon="true" titleText="Bedroom" onZonePage="true" />
 
-      <div className="bg-white rounded-full p-2 w-8 h-8 justify-center flex">
-        {/* <PowerOff> */}
-          <OnOff />
-        {/* </PowerOff> */}
+      <div className="bg-white rounded-full p-2 w-8 h-8 justify-center flex cursor-pointer">
+        <OnOff />
       </div>
 
       <MainContentWrapper>

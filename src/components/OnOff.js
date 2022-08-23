@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PowerOff from "../subcomponents/PowerOff";
 
 const OnOff = () => {
   const [toggle, setToggle] = useState(true);
@@ -22,13 +23,9 @@ const OnOff = () => {
         onClick={() => {
           setToggle(!toggle);
         }}
-        style={{
-          width: "4rem",
-          height: "4rem",
-          borderRadius: "50%",
-          backgroundColor: "rgb(228, 192, 39)",
-        }}
-      ></div>
+        >
+        <PowerOff />
+      </div>
     </>
   );
 };
